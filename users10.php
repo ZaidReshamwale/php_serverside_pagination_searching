@@ -98,11 +98,11 @@ $page_link = '';
 
 //echo $total_links;
 
-if($total_links > 4)
+if($total_links > 9)
 {
-  if($page < 5)
+  if($page < 10)
   {
-    for($count = 1; $count <= 5; $count++)
+    for($count = 1; $count <= 10; $count++)
     {
       $page_array[] = $count;
     }
@@ -143,7 +143,7 @@ else
 }
 
 
-$page_array[] = !$total_data ; 
+$page_array[] = $count ; 
 for($count = 0; $count < count($page_array); $count++)
 
 {
